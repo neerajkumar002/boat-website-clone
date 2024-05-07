@@ -96,3 +96,41 @@ nav .right-child {
  .hero-image img{
     width: 100%;
  }
+
+
+/**
+*? main section css */
+
+.categories-section{
+width: 100%;
+padding: 20px 40px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.category-heading{
+  font-size: 1.6rem;
+}
+
+.category-heading .category-sub-heading{
+  font-weight: 600;
+}
+
+.categories-container{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.category-item{
+  width: 100px;
+  text-align: center;
+}
+.category-item-img{
+  width: 90px;
+}
+.category-item-title{
+  font-weight: 600;
+  color: black;
+}
