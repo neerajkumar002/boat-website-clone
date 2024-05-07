@@ -2,14 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-:root{
-    --text-primary:#1a2024;
+:root {
+  --text-primary: #1a2024;
 }
-
-
 
 a {
   text-decoration: none;
@@ -25,16 +22,16 @@ li {
 /* navbar */
 nav {
   width: 100%;
-  padding:15px 35px ;
+  padding: 15px 35px;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 .nav-icon {
   width: 20px;
 }
-.arrow-down{
-    transform: rotate(90deg);
+.arrow-down {
+  transform: rotate(90deg);
 }
 nav .left-child {
   display: flex;
@@ -52,7 +49,7 @@ nav .left-child {
   gap: 30px;
   color: var(--text-primary);
 }
-.nav-list ul li a{
+.nav-list ul li a {
   color: var(--text-primary);
   font-size: 1.2rem;
 }
@@ -62,13 +59,13 @@ nav .right-child {
   align-items: center;
   gap: 20px;
 }
-.right-child-icons{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.right-child-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .search-bar {
-    width: 300px;
+  width: 300px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -83,54 +80,185 @@ nav .right-child {
   outline: none;
 }
 
-
 /**
 *? hero section css
 
  */
 
- .hero-section{
-    width: 100%;
- }
+.hero-section {
+  width: 100%;
+}
 
- .hero-image img{
-    width: 100%;
- }
-
+.hero-image img {
+  width: 100%;
+}
 
 /**
 *? main section css */
 
-.categories-section{
-width: 100%;
-padding: 20px 40px;
-display: flex;
-flex-direction: column;
-gap: 30px;
+.categories-section {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.category-heading{
+.category-heading {
   font-size: 1.6rem;
 }
 
-.category-heading .category-sub-heading{
+.category-heading .category-sub-heading {
   font-weight: 600;
 }
 
-.categories-container{
+.categories-container {
   width: 100%;
   display: flex;
   gap: 30px;
 }
 
-.category-item{
+.category-item {
   width: 100px;
   text-align: center;
 }
-.category-item-img{
+.category-item-img {
   width: 90px;
 }
-.category-item-title{
+.category-item-title {
   font-weight: 600;
   color: black;
+}
+
+/* products css */
+
+.special-products-container {
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.product-card-sp {
+  width: 320px;
+  height: 410px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-label-1 {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 16px;
+  font-size: 0.8rem;
+}
+
+.card-label-2 {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+}
+.card-label-2-child {
+  width: 250px;
+  background-color: #fcc50b;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px ;
+}
+
+.product-details {
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+.card-title a {
+  color: black;
+  font-weight: 600;
+}
+.produt-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.product-price-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.original-price {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.delete-price {
+  color: rgb(176, 176, 176);
+  font-size: 0.9rem;
+}
+
+.offer-pr {
+  color: rgb(0, 255, 0);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-star,
+.rating-reviews {
+  display: flex;
+  align-items: center;
+}
+.rating-reviews {
+  border-left: 1px solid rgb(206, 206, 206);
+}
+.add-to-cart-btn {
+  padding: 12px 25px;
+  background-color: #1a2024;
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
