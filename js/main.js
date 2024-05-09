@@ -20,6 +20,9 @@ const images = [
   },
 ];
 
+console.log(images)
+
+
 function displaySlide() {
   sliderContainer.innerHTML = images
     .map(
