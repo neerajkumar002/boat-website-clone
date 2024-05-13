@@ -173,9 +173,18 @@ nav .right-child {
   width: 100%;
   padding: 10px 40px;
 }
+.product-card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+
 
 .product-card-sp {
-  width: 320px;
+  width: 305px;
   height: 410px;
   border-radius: 20px;
   overflow: hidden;
@@ -210,10 +219,11 @@ nav .right-child {
   bottom: -15px;
 }
 .card-label-2-child {
-  width: 250px;
+  width: 200px;
   background-color: #fcc50b;
   color: black;
-  border-radius: 10px;
+
+font-size: 0.8rem;  border-radius: 10px;
   border: 1px solid white;
   margin-left: auto;
   margin-right: auto;
@@ -269,13 +279,13 @@ nav .right-child {
 }
 .delete-price {
   color: rgb(176, 176, 176);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .offer-pr {
-  color: rgb(0, 255, 0);
+  color: #28B985;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .ratings {
@@ -288,12 +298,13 @@ nav .right-child {
 .rating-reviews {
   display: flex;
   align-items: center;
+  font-size: 0.8rem;
 }
 .rating-reviews {
   border-left: 1px solid rgb(206, 206, 206);
 }
 .add-to-cart-btn {
-  padding: 12px 25px;
+  padding: 12px 14px;
   background-color: #1a2024;
   color: white;
   border: none;
@@ -303,6 +314,8 @@ nav .right-child {
 /**
 *? product section css
  */
+
+
 
 .product-tag-container {
   width: 100%;
