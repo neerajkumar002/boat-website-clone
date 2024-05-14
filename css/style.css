@@ -15,6 +15,8 @@ li {
   list-style: none;
 }
 
+
+
 /** 
 *? header css
 */
@@ -78,9 +80,9 @@ nav .right-child {
   flex-direction: column;
   padding: 10px;
   border-radius: 5px;
-  visibility: hidden; 
+  visibility: hidden;
 }
- 
+
 .login-modal .login-modal-heading {
   display: flex;
   justify-content: space-between;
@@ -397,4 +399,103 @@ nav .right-child {
   font-weight: bold;
   color: black;
   background-color: rgb(226, 226, 226);
+}
+
+/* login-modal-wrapper style */
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.login-modal-container {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding-inline: 20px;
+}
+
+.login-modal-top-heading {
+  width: 100%;
+  text-align: center;
+}
+.login-modal-top-heading p:first-child {
+  font-size: 1.8rem;
+  padding-block: 10px;
+  position: relative;
+}
+.login-modal-top-heading p:last-child {
+  padding-bottom: 15px;
+}
+
+.close-modal-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  border: none;
+}
+
+.login-form-wrapper {
+  background-color: #eff4f7;
+  height: 275px;
+  border-radius: 10px;
+  padding-block: 50px;
+  margin-top: 15px;
+}
+
+.login-form-wrapper form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-feild {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-feild input {
+  padding: 18px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.send-otp-btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(218, 226, 230);
+  font-weight: 500;
+}
+.login-describtion {
+  text-align: center;
+  padding-block: 20px;
+  color: gray;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width: 380px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
 }
