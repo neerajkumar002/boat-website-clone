@@ -63,7 +63,47 @@ nav .right-child {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
+.login-modal {
+  width: 210px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.524);
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden; 
+}
+ 
+.login-modal .login-modal-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.login-modal .login-modal-heading p {
+  font-weight: bold;
+}
+.login-modal .login-modal-heading button {
+  background-color: transparent;
+  border: none;
+}
+.open-login-modal {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
 .search-bar {
   width: 300px;
   display: flex;
@@ -78,6 +118,11 @@ nav .right-child {
   border: none;
   background-color: transparent;
   outline: none;
+}
+.right-child-icons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /**
@@ -173,15 +218,12 @@ nav .right-child {
   width: 100%;
   padding: 10px 40px;
 }
-.product-card-container{
+.product-card-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-
 }
-
-
 
 .product-card-sp {
   width: 305px;
@@ -223,7 +265,8 @@ nav .right-child {
   background-color: #fcc50b;
   color: black;
 
-font-size: 0.8rem;  border-radius: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
   border: 1px solid white;
   margin-left: auto;
   margin-right: auto;
@@ -283,7 +326,7 @@ font-size: 0.8rem;  border-radius: 10px;
 }
 
 .offer-pr {
-  color: #28B985;
+  color: #28b985;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -314,8 +357,6 @@ font-size: 0.8rem;  border-radius: 10px;
 /**
 *? product section css
  */
-
-
 
 .product-tag-container {
   width: 100%;
