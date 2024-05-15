@@ -4,6 +4,11 @@ const closeLoginModal = document.querySelector(".login-modal-close");
 const loginModalWrapper = document.querySelector(".login-modal-wrapper");
 const openLoginModal = document.querySelector(".open-login-modal");
 const closeModalWrapper = document.querySelector(".close-modal-wrapper");
+const sendOtpBtn = document.querySelector(".send-otp-btn");
+
+sendOtpBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+});
 
 loginBtn.addEventListener(
   "click",
