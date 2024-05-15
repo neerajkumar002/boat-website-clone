@@ -15,8 +15,6 @@ li {
   list-style: none;
 }
 
-
-
 /** 
 *? header css
 */
@@ -498,4 +496,76 @@ nav .right-child {
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* footer css start */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e7f0f5;
+  padding: 50px 10px;
+ 
+}
+.ft-brand-text {
+  width: 500px;
+  padding: 10px 30px;
+ 
+}
+.ft-brand-text p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #29303c;
+  margin-top:10px ;
+  margin-bottom:10px;
+}
+
+.subscribe-email {
+  width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 5px 18px;
+}
+
+.subscribe-email input {
+  padding: 11px 8px;
+  border: none;
+  width: 90%;
+  outline: none;
+}
+.subscribe-email button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid gray;
+  color: gray;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.ft-shop-link {
+  display: flex;
+  gap: 10px;
+}
+.ft-link-container{
+  width: 800px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ 
+.link-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.link-box ul li a{
+  color: rgb(79, 79, 79);
+  font-size: 0.9rem;
 }
